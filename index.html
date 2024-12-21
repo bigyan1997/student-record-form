@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Record Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #dfdede;
+        }
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="center">Student Record Form</h1>
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <th colspan="2">Student Information</th>
+            </tr>
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name" name="name" placeholder="Enter your name" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" placeholder="Enter your email" required></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <label><input type="radio" name="gender" value="male" required> Male</label><br>
+                    <label><input type="radio" name="gender" value="female"> Female</label><br>
+                    <label><input type="radio" name="gender" value="other"> Other</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Subjects/Activities:</td>
+                <td>
+                    <label><input type="checkbox" name="subjects" value="math"> Math</label><br>
+                    <label><input type="checkbox" name="subjects" value="science"> Science</label><br>
+                    <label><input type="checkbox" name="subjects" value="sports"> Sports</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="grade">Grade Level:</label></td>
+                <td>
+                    <select id="grade" name="grade" required>
+                        <option value="">Select Grade</option>
+                        <option value="grade1">Grade 1</option>
+                        <option value="grade2">Grade 2</option>
+                        <option value="grade3">Grade 3</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="remarks">Additional Information:</label></td>
+                <td><textarea id="remarks" name="remarks" rows="4" cols="30" placeholder="Enter remarks or address"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="center">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
